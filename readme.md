@@ -26,9 +26,9 @@ To run this project, follow these steps:
 
 The project has one endpoint that receives a request and returns a response:
 
-### `/api/hello/`
+### `/api/`
 
-- **Method:** GET
+- **Method:** GET,POST
 - **Response:**
 
     ```
