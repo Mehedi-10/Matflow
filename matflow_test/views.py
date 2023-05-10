@@ -1,5 +1,7 @@
-from django.http import JsonResponse
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
-def api_view(request):
-    response = {'message': 'Hello, world!'}
-    return JsonResponse(response)
+@api_view(['GET','POST'])
+def hello_world(request):
+
+    return Response({'message': 'Hello, World!'})

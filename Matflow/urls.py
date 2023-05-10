@@ -16,8 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from matflow_test.views import api_view
+from matflow_test.views import hello_world
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', api_view),
-]
+    path('api/', hello_world),]
