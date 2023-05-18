@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from matflow_test.views import hello_world
+from matflow_test.views import hello_world,login,signup
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', hello_world),]
+    path('api/', hello_world),
+    path('signup/', signup, name='signup'),
+    path('login/', login, name='login'),
+]
